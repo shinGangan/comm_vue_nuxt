@@ -27,9 +27,9 @@ body:
     validations:
       required: true
   - type: input
-    id: x
+    id: twitter
     attributes:
-      label: X (formerly　Twitter)
+      label: X (formerly Twitter)
       description: 本人への認識確認のために利用(DM / ポスト)することがございます。お手間でなければご記入お願い致します。
       placeholder: ex. gangan_nikki
     validations:
