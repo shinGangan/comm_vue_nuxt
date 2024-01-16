@@ -1,0 +1,50 @@
+name: With Author
+description: Publication　へのアサインリクエストはこちらへ
+title: "[追加希望]: xyz"
+labels: ["🖐️ wish author"]
+assignees:
+  - shinGangan
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本リポジトリは[Vue・Nuxt 情報が集まる広場 / Plaza for Vue・Nuxt.](https://zenn.dev/p/comm_vue_nuxt)というZenn Publicationのアサイン用です。
+
+        Publicationへのメンバー追加希望の方は以下フォームの入力をお願いいたします。
+
+        ---
+        - 補足1: 本リポジトリへの参加資格は特にございません。
+                Vue・Nuxt・関連ライブラリに関する内容であれば初心者 / ベテランに関わらず執筆頂きたいです。
+
+        - 補足2: 基本的に自薦でお願い致します。他薦でも構いませんがその場合は本人への確認が発生し、追加までに時間を要します。
+                もし他薦のやり取りなどがあれば備考欄へ記載をお願い致します。
+  - type: input
+    id: name
+    attributes:
+      label: Zenn User Name
+      description: Zennのユーザーネームを入力してください。 `https://zenn.dev/` は含めないでください。
+      placeholder: ex. gangannikki
+    validations:
+      required: true
+  - type: input
+    id: x
+    attributes:
+      label: X (formerly　Twitter)
+      description: 本人への認識確認のために利用(DM / ポスト)することがございます。お手間でなければご記入お願い致します。
+      placeholder: ex. gangan_nikki
+    validations:
+      required: false
+  - type: input
+    id: github
+    attributes:
+      label: GitHub
+      description: 本人への認識確認のために利用(メンション)することがございます。お手間でなければご記入お願い致します。
+      placeholder: ex. shinGangan
+    validations:
+      required: false
+  - type: textarea
+    id: note
+    attributes:
+      label: 備考欄
+      description: 何か共有事項があればこちらまでお願いいたします。
+      placeholder: 何かあれば
