@@ -1,0 +1,33 @@
+name: Please write
+description: 書いて欲しいテーマがある場合はこちらのテンプレートを利用ください
+title: "request: xyz"
+labels: ["🙏 please write"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本リポジトリは[Vue・Nuxt 情報が集まる広場 / Plaza for Vue・Nuxt.](https://zenn.dev/p/comm_vue_nuxt)というZenn Publicationのアサイン用です。
+
+        Vue / Nuxt / related librariesに関して、執筆して欲しいテーマがありましたら下記フォームを入力してください。
+  - type: input
+    id: abstract
+    attributes:
+      label: 概要
+      description: 書いて欲しい記事の概要を書いてください。
+      placeholder: ex. Vue3について書いて欲しい
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 詳細
+      description: 書いて欲しい記事に関する詳細を書いてください。
+      placeholder: ex. xyzという背景があり、fooについて執筆してほしい。
+    id: note
+    attributes:
+      label: 備考欄
+      description: |
+        「OSSやコミュニティに関わりたいと思っている人に書いてほしい」「出来れば初学者に書いて欲しい」など、執筆依頼に関する備考があれば記入してください。
+
+        依頼者・執筆者で合意が取れている場合は「barさんに書いてもらいたい(合意済み)」などのコメントもこちらへお願いします。
+      placeholder: 何かあれば
