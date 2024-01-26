@@ -23,6 +23,7 @@ body:
       label: 詳細
       description: 書いて欲しい記事に関する詳細を書いてください。
       placeholder: ex. xyzという背景があり、fooについて執筆してほしい。
+  - type: textarea
     id: note
     attributes:
       label: 備考欄
