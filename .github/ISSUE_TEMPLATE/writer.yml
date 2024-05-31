@@ -1,0 +1,36 @@
+name: Want to write
+description: 「こういうテーマで執筆します！」というテーマがある場合はこちらのテンプレートを利用ください
+title: "write: xyz"
+labels: ["✍️ want to writer"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        「XYZのテーマで執筆したいです」という執筆意思表示で利用するテーマです。
+        意思表示を行うことで多方面から情報を集めたり、自信を奮い立たせるためにご利用ください。
+
+        ※ ZennのPublication未加入の場合はアサインテンプレートを用いてアサインリクエストを起票してください。🙏
+  - type: input
+    id: abstract
+    attributes:
+      label: 概要
+      description: 書きたい記事の概要を書いてください。
+      placeholder: ex. Nuxtについて書きたい
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 詳細
+      description: 書きたい記事に関する詳細を書いてください。
+      placeholder: ex. xyzという背景があり、fooについて執筆したい。
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: 備考欄
+      description: |
+        「nヶ月くらいで執筆完了の予定」「初学者向けである」など、執筆依頼に関する備考があれば記入してください。
+
+      placeholder: 何かあれば
