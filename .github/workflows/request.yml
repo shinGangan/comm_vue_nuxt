@@ -1,0 +1,22 @@
+name: Edit Issue using Github CLI
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-assign:
+    if: contains(github.event.issue.labels.*.name, '🖐️ wish author')
+    uses: shinGangan/.github/.github/workflows/issue.yml@main
+    permissions:
+      contents: read
+      repository-projects: read
+      issues: write
+    with:
+      number: ${{ github.event.issue.number }}
+      title: ${{ github.event.issue.title }}
+      milestone: "articles"
+      assignee: ${{ github.actor }}
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+      repo: ${{ github.repository }}
