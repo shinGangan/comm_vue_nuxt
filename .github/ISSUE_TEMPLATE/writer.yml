@@ -1,4 +1,4 @@
-name: Want to write
+name: ✍️ Want to write
 description: 「こういうテーマで執筆します！」というテーマがある場合はこちらのテンプレートを利用ください
 title: "write: xyz"
 labels: ["✍️ want to writer"]
@@ -15,7 +15,7 @@ body:
     attributes:
       label: 概要
       description: 書きたい記事の概要を書いてください。
-      placeholder: ex. Nuxtについて書きたい
+      placeholder: eg. Nuxtについて書きたい
     validations:
       required: true
   - type: textarea
@@ -23,7 +23,7 @@ body:
     attributes:
       label: 詳細
       description: 書きたい記事に関する詳細を書いてください。
-      placeholder: ex. xyzという背景があり、fooについて執筆したい。
+      placeholder: eg. xyzという背景があり、fooについて執筆したい。
     validations:
       required: true
   - type: textarea
