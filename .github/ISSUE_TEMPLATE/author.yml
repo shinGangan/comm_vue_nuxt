@@ -1,4 +1,4 @@
-name: With Author
+name: 🖐️ With Author
 description: Publication　へのアサインリクエストはこちらへ
 title: "[追加希望]: xyz"
 labels: ["🖐️ wish author"]
@@ -41,7 +41,7 @@ body:
       description: 本人への認識確認のために利用(メンション)することがございます。お手間でなければご記入お願い致します。
       placeholder: ex. shinGangan
     validations:
-      required: false
+      required: true
   - type: textarea
     id: note
     attributes:
