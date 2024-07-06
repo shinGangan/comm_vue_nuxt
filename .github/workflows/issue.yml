@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/github-script@v7
         with:
+          github-token: ${{ secrets.COMM_GITHUB_TOKEN }}
           script: |
             const issueTitle = context.payload.issue.title;
             const labelsToAdd = [];
