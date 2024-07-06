@@ -60,7 +60,7 @@ jobs:
       assignee: ${{ github.actor }}
       milestone: 'articles'
     secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+      token: ${{ secrets.COMM_GITHUB_TOKEN }}
       repo: ${{ github.repository }}
 
   set-comment:
@@ -77,5 +77,5 @@ jobs:
           gh issue comment $NUMBER -b '<h3>運営コメント</h3>執筆希望あれば @shinGangan をメンションしてください。アサインします。'
         env:
           NUMBER: ${{ inputs.number }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.COMM_GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
