@@ -50,8 +50,7 @@ jobs:
 
   # ref: https://github.com/shinGangan/.github/blob/main/.github/workflows/issue.yml
   set-author:
-    needs: [set-label]
-    if: ${{ success() && contains(github.event.issue.labels.*.name, '🖐️ wish author') }}
+    if: ${{ contains(github.event.issue.labels.*.name, '🖐️ wish author') }}
     permissions:
       contents: read
       issues: write
